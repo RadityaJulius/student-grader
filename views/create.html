@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHasiswa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyHasiswa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Add New Student</h1>
+
+        <form action="/add" method="POST">
+            <div class="mb-3">
+                <label for="id" class="form-label">NPM</label>
+                <input type="number" step="0.01" class="form-control" id="id" name="id" placeholder="Enter NPM" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Enter student name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="uts" class="form-label">UTS</label>
+                <input type="number" step="0.01" class="form-control" id="uts" name="uts" placeholder="Enter UTS score" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="uas" class="form-label">UAS</label>
+                <input type="number" step="0.01" class="form-control" id="uas" name="uas" placeholder="Enter UAS score" required>
+            </div>
+
+            <a href="/" class="btn btn-secondary">Back</a>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
